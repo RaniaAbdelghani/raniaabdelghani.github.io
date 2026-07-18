@@ -2,6 +2,14 @@
 
 All links below verified 2026-07-18 (Crossref title+author match, or direct 200).
 
+Update 2026-07-18 (June 2026 CV): the 2025 in-revision entry became **The Illusion of
+Understanding** (AIED 2026, https://doi.org/10.1007/978-3-032-29788-4_54, ★). Added:
+*From prompting to epistemic proactivity* (arXiv:2606.28472, under revision), *Curiosity
+and metacognition: towards a unified framework* (ACDB chapter,
+https://doi.org/10.1016/bs.acdb.2026.04.005), *Teaching students to question the machine*
+(arXiv:2604.01955). New talks: ECP Edinburgh Jul 2026, AIED Seoul Jun 2026. Mentoring:
+six students (5 MSc + 1 BSc thesis, Tübingen 2026). All new links verified same day.
+
 ## Publications (newest first; ★ = Selected badge)
 
 - **2025** — Abdelghani R., Sauzéon H., Murayama K., Kidd C., Oudeyer P.-Y. *Students fail to ask in-context questions with ChatGPT and to accurately evaluate its answers.* In revision. — no link
