@@ -69,6 +69,7 @@
       play();
     });
     facade.addEventListener("keydown", function (e) {
+      if (e.target.closest("a")) return; /* let the YouTube link work normally */
       if (e.key === "Enter" || e.key === " ") { e.preventDefault(); play(); }
     });
   }
