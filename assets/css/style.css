@@ -23,6 +23,8 @@
   --teal-ink: #0a6f63;
   --sun: #ffc24b;
   --sun-soft: #ffe3a3;
+  --sun-ink: #7d5e00;      /* legible deep gold for text */
+  --sun-chip: #ffeec2;     /* soft-yellow chip fill */
 
   /* pastel picture-frame cycle — theme-tied only */
   --frame-coral: #ffc2b0;
@@ -57,6 +59,8 @@
     --teal-ink: #48d8cb;
     --sun: #ffce5f;
     --sun-soft: #ffe3a3;
+    --sun-ink: #ffd77a;
+    --sun-chip: color-mix(in srgb, var(--sun) 14%, var(--paper));
     --frame-coral: #ff9e86;
     --frame-teal: #6fd6c9;
     --frame-sun: #ffd486;
@@ -251,6 +255,8 @@ a:hover { text-decoration-thickness: 2px; }
 .hero-tagline em { font-style: italic; color: var(--teal-ink); font-weight: 700; }
 
 .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-bottom: 1.25rem; }
+.hero-portrait .hero-actions { margin: 1.5rem 0 0; }
+.hero-portrait .hero-actions .btn { flex: 1; text-align: center; }
 
 .btn {
   display: inline-block; font-family: var(--sans); font-size: .92rem; font-weight: 700;
@@ -276,6 +282,10 @@ a:hover { text-decoration-thickness: 2px; }
   display: flex; gap: 1.25rem; list-style: none; margin: 0; padding: 0;
   font-family: var(--sans); font-size: .9rem; font-weight: 700;
 }
+.hero-links a { text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); }
+.hero-links li:nth-child(1) a { color: var(--coral-ink); }  /* Email  */
+.hero-links li:nth-child(2) a { color: var(--teal-ink); }   /* LinkedIn */
+.hero-links li:nth-child(3) a { color: var(--sun-ink); }    /* Scholar */
 
 .hero-portrait img {
   width: 100%; height: auto; border-radius: 1rem; display: block;
@@ -472,6 +482,11 @@ a:hover { text-decoration-thickness: 2px; }
   padding: .18rem .5rem; border-radius: 999px; justify-self: start; margin-top: .05rem;
 }
 .timeline div { font-family: var(--sans); font-size: .93rem; line-height: 1.5; }
+
+/* Experience & Education leans yellow, matching its section marker */
+#experience .subhead { color: var(--sun-ink); }
+#experience .tl-when { color: var(--sun-ink); background: var(--sun-chip); }
+#experience .timeline li::before { background: var(--sun); }
 
 /* ---------- resources page ---------- */
 
