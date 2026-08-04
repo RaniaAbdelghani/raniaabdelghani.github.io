@@ -279,13 +279,31 @@ a:hover { text-decoration-thickness: 2px; }
 }
 
 .hero-links {
-  display: flex; gap: 1.25rem; list-style: none; margin: 0; padding: 0;
+  display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; list-style: none; margin: 0; padding: 0;
   font-family: var(--sans); font-size: .9rem; font-weight: 700;
 }
-.hero-links a { text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); }
+.hero-links a {
+  display: inline-flex; align-items: center; gap: .4rem;
+  text-decoration: none;
+}
+.hero-links .icon {
+  width: 1.15em; height: 1.15em; flex: none; fill: currentColor;
+  transition: transform .18s ease;
+}
+.hero-links a:hover .icon { transform: translateY(-2px) rotate(-6deg); }
+.hero-links .label {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+}
+.hero-links a:hover .label { text-decoration-thickness: 2px; }
 .hero-links li:nth-child(1) a { color: var(--coral-ink); }  /* Email  */
 .hero-links li:nth-child(2) a { color: var(--teal-ink); }   /* LinkedIn */
 .hero-links li:nth-child(3) a { color: var(--sun-ink); }    /* Scholar */
+.hero-links li:nth-child(4) a { color: var(--ink-soft); }   /* GitHub */
+@media (prefers-reduced-motion: reduce) {
+  .hero-links .icon { transition: none; }
+  .hero-links a:hover .icon { transform: none; }
+}
 
 .hero-portrait img {
   width: 100%; height: auto; border-radius: 1rem; display: block;
