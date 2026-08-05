@@ -424,13 +424,6 @@ a:hover { text-decoration-thickness: 2px; }
 .pub-meta { margin: 0; font-family: var(--sans); font-size: .85rem; color: var(--ink-soft); }
 .pub-meta .me { font-weight: 800; color: var(--ink); }
 
-.pub-selected .pub-title::after {
-  content: "★"; color: var(--sun); font-size: .85em; margin-left: .45em;
-  vertical-align: .12em;
-  text-shadow: 0 0 1px color-mix(in srgb, var(--coral) 60%, transparent);
-}
-@media (prefers-color-scheme: dark) { .pub-selected .pub-title::after { text-shadow: none; } }
-
 /* ---------- talks / video ---------- */
 
 .video-facade {

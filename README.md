@@ -13,7 +13,7 @@ a minute.
 |---|---|
 | Add my photo | Save it as `assets/img/portrait.jpg` (portrait orientation, ~640×800 px works well). Nothing else to change. |
 | Update my CV | Replace `assets/cv-rania-abdelghani.pdf` with the new PDF (keep the same filename). |
-| Add a publication | In `index.html`, find `<!-- ===== PUBLICATIONS ===== -->`, copy an existing `<li class="pub">…</li>` block into the right year, edit title/authors/venue/link. Add `pub-selected` to the `<li>` class for a ★ badge. |
+| Add a publication | In `index.html`, find `<!-- ===== PUBLICATIONS ===== -->`, copy an existing `<li class="pub">…</li>` block into the right year, edit title/authors/venue/link. |
 | Add a talk | Copy a `<li>` inside `class="talk-list"` and edit the date and text. |
 | Change the bio | Edit the paragraphs in the `id="about"` section. |
 | Change colors | Edit the variables at the top of `assets/css/style.css` (`--accent`, etc.). Dark-mode colors are in the `@media (prefers-color-scheme: dark)` block. |
