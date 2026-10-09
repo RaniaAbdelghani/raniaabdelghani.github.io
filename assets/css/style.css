@@ -241,6 +241,10 @@ a:hover { text-decoration-thickness: 2px; }
   letter-spacing: -.02em;
   margin: 0 0 1.3rem;
 }
+.hero h1 .h1-suffix {
+  font-size: .52em; font-weight: 500; letter-spacing: -.01em;
+  color: var(--ink-soft); white-space: nowrap;
+}
 .hero h1::after {
   content: ""; position: absolute; left: -.02em; right: -.02em; bottom: -.22em;
   height: .34em; background: var(--swoosh) no-repeat; background-size: 100% 100%;
